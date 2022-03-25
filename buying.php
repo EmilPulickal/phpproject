@@ -43,6 +43,9 @@ for ($i=0; $i <=5 ; $i++) {
 	<title>Buy Cars</title>
 
 	<style>
+  body{
+    //background-color: #F3F0EE;
+  }
 
 	.container{
 		width: 100%;
@@ -94,8 +97,6 @@ for ($i=0; $i <=5 ; $i++) {
 }
 
 
-
-
 	.box{
 		width: 250px;
 		margin: 0 10px;
@@ -130,16 +131,29 @@ object-fit:cover;
     width: 100%;
     background: linear-gradient(180deg,#eecda3,#ef629f  )
   }
+  .content{
+    background-color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .name{
+    margin-top: 30px;
+  }
 	</style>
 </head>
 <body>
   <header>
-    <?php
-    if(isset($_SESSION['loginuser_name'])){
-      echo "<h3 style='color:black;'>
-        Welcome ".$_SESSION['loginuser_name']."<br> </h3>";}
-      else{echo "<h3 style='color:black;'>Please login/register</h3>";}
-    ?>
+    <div class="name">
+      <?php
+      if(isset($_SESSION['loginuser_name'])){
+        echo "<h3 style='color:black;padding-left:20px;'>
+          Welcome ".$_SESSION['loginuser_name']."<br> </h3>";}
+        else{echo "<h3 style='color:black;'>Please login/register</h3>";}
+      ?>
+
+    </div>
+
   </header>
   <div class="container">
     <div class="box">

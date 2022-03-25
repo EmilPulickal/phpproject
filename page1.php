@@ -150,9 +150,11 @@
   }
   .ltr:hover{
     animation-name: moveToRight;
+    animation-name: moveAhead;
     animation-duration: 4s;
     animation-iteration-count : infinite;
   }
+
   @keyframes moveToRight {
           0% {
             transform: translateX(0px);
